@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="w-full">
+    <div class="">
+      <!-- Top Navbar -->
+      <div class="h-20 pl-72 sticky top-0 rounded-xl py-6">
+        <div class="bg-white items-center">
+          <div class="flex items-center justify-between pr-6 gap-32">
+            <div class="">
+              <h1 class="text-5xl font-semibold text-">MY NOTES</h1>
+            </div>
+
+            <!-- searchbar starts here -->
+            <div class="flex items-center p-4 rounded-lg bg-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+              <input class="pl-3" type="text" placeholder="Search" />
+            </div>
+            <!-- searchbar ends here -->
+
+            <!-- presonal info starts here -->
+            <div class="flex items-center gap-5">
+              <h3>Atik Faisal Emon</h3>
+              <img
+                class="h-10 w-10 rounded-full"
+                src="/src/img/profile.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main Content -->
+      <main
+        class="bg-gray-300 overflow-y-scroll space-y-6 mt-6 ml-72 rounded-l-3xl pl-10"
+      >
+        <div class="mt-9">
+          <h2 class="text-4xl">Recent Folders</h2>
+        </div>
+        <div class="">
+          <div>
+            <div class="flex items-center gap-12">
+              <p class="text-gray-400">Today</p>
+              <p>This Week</p>
+              <p class="text-gray-400">This Month</p>
+            </div>
+            <div class="ml-28 w-8 h-1 bg-neutral-800"></div>
+          </div>
+        </div>
+
+        <!-- Items section 1 -->
+
+        <section class="flex flex-col md:flex-row gap-6">
+          <!-- item row 1 -->
+          <div class="bg-blue-100 w-1/4 p-6 space-y-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <svg
+                class="w-10 h-10 text-purple-300"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                />
+              </svg>
+              <h1 class="text-5xl">...</h1>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="text-3xl">Movie Review</h1>
+              <p class="text-gray-400">12/03/2024</p>
+            </div>
+          </div>
+
+          <!-- item row 2 -->
+          <div class="bg-red-100 w-1/4 p-6 space-y-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <svg
+                class="w-10 h-10 text-orange-800"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                />
+              </svg>
+              <h1 class="text-5xl">...</h1>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="text-3xl">Class Note</h1>
+              <p class="text-gray-400">12/03/2024</p>
+            </div>
+          </div>
+
+          <!-- item row 3 -->
+          <div class="bg-yellow-50 w-1/4 p-6 space-y-6 rounded-xl">
+            <div class="flex justify-between items-center">
+              <svg
+                class="w-10 h-10 text-yellow-200"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+                />
+              </svg>
+              <h1 class="text-5xl">...</h1>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="text-3xl">Movie Review</h1>
+              <p class="text-gray-400">12/03/2024</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- Sidebar -->
+    <aside class="bg-white w-72 h-svh fixed inset-y-0 left-0 sm:hidden">
+      <!-- Sidebar Content -->
+      <div class="">
+        <!-- this is the logo -->
+        <div class="flex items-center justify-center py-6">
+          <img
+            class="h-12 w-12"
+            src="https://cdn.iconscout.com/icon/free/png-512/free-mastercard-3521564-2944982.png?f=webp&w=256"
+            alt=""
+          />
+          <h1 class="text-3xl ml-5 tracking-widest">MINO</h1>
+        </div>
+        <!-- logo ends here -->
+      </div>
+    </aside>
+  </body>
+</html>

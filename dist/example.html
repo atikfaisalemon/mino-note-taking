@@ -9,7 +9,7 @@
   <body class="w-full">
     <div class="">
       <!-- Top Navbar -->
-      <div class="h-20 pl-72 sticky top-0 rounded-xl py-6">
+      <div class="h-20 pl-0 md:pl-72 sticky top-0 rounded-xl">
         <div class="bg-white items-center">
           <div class="flex items-center justify-between pr-6 gap-32">
             <div class="">
@@ -17,7 +17,7 @@
             </div>
 
             <!-- searchbar starts here -->
-            <div class="flex items-center p-4 rounded-lg bg-gray-400">
+            <div class="flex items-center p-4 rounded-lg bg-[#F6F8FA]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -32,7 +32,11 @@
                   d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                 />
               </svg>
-              <input class="pl-3" type="text" placeholder="Search" />
+              <input
+                class="pl-3 bg-[#F6F8FA] focus:outline-none ring-0 border-none"
+                type="text"
+                placeholder="Search"
+              />
             </div>
             <!-- searchbar ends here -->
 
@@ -51,17 +55,21 @@
 
       <!-- main Content -->
       <main
-        class="bg-gray-300 overflow-y-scroll space-y-6 mt-6 ml-72 rounded-l-3xl pl-10"
+        class="bg-[#F6F8FA] overflow-y-scroll overscroll-none space-y-6 ml-72 rounded-l-3xl pl-10 h-full mb-6"
       >
+        <div class="bg-white py-4 fixed top-14 left-72 right-0"></div>
+        <div
+          class="bg-[#F6F8FA] rounded-t-3xl py-2 fixed top-14 left-72 right-0 z-50"
+        ></div>
         <div class="mt-9">
           <h2 class="text-4xl">Recent Folders</h2>
         </div>
         <div class="">
           <div>
             <div class="flex items-center gap-12">
-              <p class="text-gray-400">Today</p>
-              <p>This Week</p>
-              <p class="text-gray-400">This Month</p>
+              <p class="text-gray-400 hover:text-neutral-800">Today</p>
+              <p class="text-gray-400 hover:text-neutral-800">This Week</p>
+              <p class="text-gray-400 hover:text-neutral-800">This Month</p>
             </div>
             <div class="ml-28 w-8 h-1 bg-neutral-800"></div>
           </div>
@@ -71,7 +79,7 @@
 
         <section class="flex flex-col md:flex-row gap-6">
           <!-- item row 1 -->
-          <div class="bg-blue-100 w-1/4 p-6 space-y-6 rounded-xl">
+          <div class="bg-[#DFF2FF] w-1/4 p-6 space-y-6 rounded-xl">
             <div class="flex justify-between items-center">
               <svg
                 class="w-10 h-10 text-purple-300"
@@ -148,22 +156,300 @@
             </div>
           </div>
         </section>
+
+        <!-- my notes starts here -->
+        <div class="mt-9">
+          <h2 class="text-4xl">My Notes</h2>
+        </div>
+        <div class="">
+          <div>
+            <div class="flex items-center gap-12">
+              <p class="text-gray-400 hover:text-neutral-800">Today</p>
+              <p class="text-gray-400 hover:text-neutral-800">This Week</p>
+              <p class="text-gray-400 hover:text-neutral-800">This Month</p>
+            </div>
+            <div class="ml-28 w-8 h-1 bg-neutral-800"></div>
+          </div>
+        </div>
+        <!-- my notes ends here -->
+
+        <!-- Cart Section Start here -->
+        <section class="flex flex-col md:flex-row gap-6">
+          <!-- this is item 1 -->
+          <div class="flex flex-col p-6 bg-[#E9E481] w-1/4 rounded-lg">
+            <p class="text-neutral-500">12/12/2024</p>
+            <div class="flex justify-between items-center">
+              <h2 class="text-lg">Mid Test Exam</h2>
+              <div class="w-5 h-5 bg-black text-white rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr class="border-[0.5px] border-[#C1BD6E] my-6" />
+            <p class="text-[#7D6461]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptates voluptatem id consequatur assumenda similique
+              dignissimos qui sunt harum aut? Ad reiciendis quae dolore
+              obcaecati et libero laudantium repellat tempora?
+            </p>
+            <div class="flex gap-6 my-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <p>10:30 PM, Monday</p>
+            </div>
+          </div>
+
+          <!-- this is item 2 -->
+          <div class="flex flex-col p-6 bg-[#EEAAAA] w-1/4 rounded-lg">
+            <p class="text-neutral-500">12/12/2024</p>
+            <div class="flex justify-between items-center">
+              <h2 class="text-lg">Mid Test Exam</h2>
+              <div class="w-5 h-5 bg-black text-white rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr class="border-[0.5px] border-[#C1BD6E] my-6" />
+            <p class="text-[#7D6461]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptates voluptatem id consequatur assumenda similique
+              dignissimos qui sunt harum aut? Ad reiciendis quae dolore
+              obcaecati et libero laudantium repellat tempora?
+            </p>
+            <div class="flex gap-6 my-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <p>10:30 PM, Monday</p>
+            </div>
+          </div>
+          <!-- this is item 3 -->
+          <div class="flex flex-col p-6 bg-[#6CB5DF] w-1/4 rounded-lg">
+            <p class="text-neutral-500">12/12/2024</p>
+            <div class="flex justify-between items-center">
+              <h2 class="text-lg">Mid Test Exam</h2>
+              <div class="w-5 h-5 bg-black text-white rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr class="border-[0.5px] border-[#C1BD6E] my-6" />
+            <p class="text-[#7D6461]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptates voluptatem id consequatur assumenda similique
+              dignissimos qui sunt harum aut? Ad reiciendis quae dolore
+              obcaecati et libero laudantium repellat tempora?
+            </p>
+            <div class="flex gap-6 my-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <p>10:30 PM, Monday</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <!-- Sidebar -->
-    <aside class="bg-white w-72 h-svh fixed inset-y-0 left-0 sm:hidden">
+    <aside class="bg-white w-72 h-svh fixed inset-y-0 left-0 hidden md:block">
       <!-- Sidebar Content -->
       <div class="">
         <!-- this is the logo -->
-        <div class="flex items-center justify-center py-6">
+        <div class="flex items-center justify-center py-3">
           <img
-            class="h-12 w-12"
+            class="h-10 w-10"
             src="https://cdn.iconscout.com/icon/free/png-512/free-mastercard-3521564-2944982.png?f=webp&w=256"
             alt=""
           />
-          <h1 class="text-3xl ml-5 tracking-widest">MINO</h1>
+          <h1 class="text-2xl ml-5 tracking-widest">MINO</h1>
         </div>
         <!-- logo ends here -->
+
+        <!-- slide section strts here -->
+        <section class="flex flex-col mt-16">
+          <!-- add new button  -->
+          <div class="flex justify-center items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 10.5v6m3-3H9m4.06-7.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"
+              />
+            </svg>
+
+            <h2 class="text-xl">Add new</h2>
+          </div>
+          <!-- add new button ends here  -->
+
+          <!-- gollah div starts here  -->
+          <div class="flex flex-col space-y-3 mt-6 items-center">
+            <div class="w-6 h-6 rounded-full bg-yellow-300"></div>
+            <div class="w-6 h-6 rounded-full bg-[#62A0C3]"></div>
+            <div class="w-6 h-6 rounded-full bg-[#FF0000]"></div>
+          </div>
+          <!-- gollah div ends here  -->
+
+          <div
+            class="flex flex-col justify-center items-start pl-20 mt-12 space-y-6"
+          >
+            <!-- item 1 -->
+            <div
+              class="flex justify-center items-center gap-4 text-gray-400 hover:text-neutral-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                />
+              </svg>
+
+              <h2 class="">Calender</h2>
+            </div>
+
+            <!-- item 2 -->
+            <div
+              class="flex justify-center items-center gap-4 text-gray-400 hover:text-neutral-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                />
+              </svg>
+
+              <h2 class="text-gray-400 hover:text-neutral-800">Archive</h2>
+            </div>
+
+            <!-- item 3 -->
+            <div
+              class="flex justify-center items-center gap-4 text-gray-400 hover:text-neutral-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+
+              <h2 class="text-gray-400 hover:text-neutral-800">Trash</h2>
+            </div>
+          </div>
+          <div class="flex flex-col p-6 mt-40 items-center space-y-5">
+            <p class="text-[#989898] hover:text-neutral-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              consectetur, eius sint.
+            </p>
+            <div>
+              <img class="w-40 h-40" src="/src/img/buttom img.png" alt="" />
+            </div>
+            <button class="text-white bg-[#253D7A] p-3 rounded-lg">
+              Upgrade pro
+            </button>
+          </div>
+        </section>
+
+        <!-- bottom section start here  -->
       </div>
     </aside>
   </body>
